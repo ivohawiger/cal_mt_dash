@@ -1,10 +1,12 @@
 from flask import Flask, render_template, request, jsonify
 import json
+import os
 from collections import Counter, defaultdict
 import random
 from dotenv import load_dotenv
 
 load_dotenv()
+print (os.getenv("ORACLE_USER"))
 
 app = Flask(__name__)
 
